@@ -1,6 +1,6 @@
 package com.bdg.bas.ahakobyan.entity;
 
-import com.bdg.bas.ahakobyan.common.cardType;
+import com.bdg.bas.ahakobyan.common.CardType;
 
 import java.time.LocalDate;
 
@@ -10,5 +10,5 @@ public class CreditCard extends AbstractEntity {
     private String cardNumber;
     private LocalDate expDate;
     private int code;
-    private cardType cardType;
+    private CardType cardType;
 }
