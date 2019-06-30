@@ -1,4 +1,7 @@
 package com.bdg.bas.tminasyan.common;
 
-public class CardType {
+public enum  CardType {
+
+    VISA, MASTERCARD, AmEx;
 }
+
