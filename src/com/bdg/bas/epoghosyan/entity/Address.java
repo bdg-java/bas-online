@@ -1,10 +1,12 @@
-package com.bdg.bas.epoghosyan.common;
+package com.bdg.bas.epoghosyan.entity;
+
+import com.bdg.bas.epoghosyan.common.Country;
 
 public class Address {
 
-    Country country;
-    String street;
-    String phoneNumber;
+    private Country country;
+    private String street;
+    private String phoneNumber;
 
     public Address(Country country, String street, String phoneNumber) {
         this.country = country;

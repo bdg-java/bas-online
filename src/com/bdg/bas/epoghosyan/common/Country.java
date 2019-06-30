@@ -2,13 +2,11 @@ package com.bdg.bas.epoghosyan.common;
 
 public enum Country {
 
-    AM("Armenia", "051");
+    ARM("Armenia"), RU("Russia");
 
-    String countryName;
-    String numbericCode;
+    private String countryName;
 
-    Country(String countryName, String numbericCode) {
+    Country(String countryName) {
         this.countryName = countryName;
-        this.numbericCode = numbericCode;
     }
 }
