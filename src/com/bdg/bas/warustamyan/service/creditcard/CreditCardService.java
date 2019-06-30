@@ -1,7 +1,7 @@
 package com.bdg.bas.warustamyan.service.creditcard;
 
 
-import com.bdg.bas.natabekyan.dto.CreditCardCreationRequest;
+import com.bdg.bas.warustamyan.dto.CreditCardCreationRequest;
 import com.bdg.bas.warustamyan.entity.CreditCard;
 import com.bdg.bas.warustamyan.service.BankAccountBaseService;
 

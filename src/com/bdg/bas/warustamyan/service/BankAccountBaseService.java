@@ -10,5 +10,7 @@ import com.bdg.bas.warustamyan.entity.AbstractBasEntity;
 
 public interface BankAccountBaseService<T extends AbstractBasEntity, R> {
 
+    int STORAGE_SIZE = 10;
+
     T create(R request);
 }
