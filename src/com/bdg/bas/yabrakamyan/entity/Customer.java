@@ -1,15 +1,15 @@
 package com.bdg.bas.yabrakamyan.entity;
 
-public class Customer extends AbstractBankEtity{
+public class Customer extends AbstractBankEntity {
 
     protected String firstName;
     protected String lastName;
-    protected Adress adress;
+    protected Address address;
 
-    public Customer(String firstName, String lastName, Adress adress) {
+    public Customer(String firstName, String lastName, Address address) {
 
         this.firstName = firstName;
         this.lastName = lastName;
-        this.adress = adress;
+        this.address = address;
     }
 }
