@@ -1,5 +1,7 @@
 package com.bdg.bas.ahakobyan.entity;
 
+import com.bdg.bas.ahakobyan.common.Address;
+
 public class Customer extends AbstractEntity {
 
     private String firstName;
