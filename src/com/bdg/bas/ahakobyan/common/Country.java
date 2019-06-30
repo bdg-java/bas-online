@@ -1,7 +1,12 @@
-package com.bdg.bas.ashahbazyan.common;
+package com.bdg.bas.ahakobyan.common;
+
+
 
 public enum Country {
-    AM("Armenia");
+
+    ARM("Armenia"), RU("Russia");
+
+
     private String countryName;
 
     Country(String countryName) {

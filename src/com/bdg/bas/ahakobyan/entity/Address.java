@@ -1,4 +1,6 @@
-package com.bdg.bas.ahakobyan.common;
+package com.bdg.bas.ahakobyan.entity;
+
+import com.bdg.bas.agharibyan.common.Country;
 
 public class Address {
 
