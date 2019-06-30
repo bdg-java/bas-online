@@ -2,9 +2,9 @@ package com.bdg.bas.epoghosyan.common;
 
 public class Address {
 
-    Country country;
-    String street;
-    String phoneNumber;
+    private Country country;
+    private String street;
+    private String phoneNumber;
 
     public Address(Country country, String street, String phoneNumber) {
         this.country = country;

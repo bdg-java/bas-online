@@ -4,8 +4,8 @@ public enum Country {
 
     AM("Armenia", "051");
 
-    String countryName;
-    String numbericCode;
+    private String countryName;
+    private String numbericCode;
 
     Country(String countryName, String numbericCode) {
         this.countryName = countryName;
