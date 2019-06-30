@@ -2,20 +2,20 @@ package com.bdg.bas.ahakobyan.storage;
 
 import com.bdg.bas.ahakobyan.entity.AbstractEntity;
 
-public class MemoryStorage implements Storage {
+public class MemoryStorage<T extends AbstractEntity> implements Storage<T> {
 
     @Override
-    public AbstractEntity add(AbstractEntity entity) {
+    public T add(T entity) {
         return null;
     }
 
     @Override
-    public AbstractEntity remove(int id) {
+    public T remove(int id) {
         return null;
     }
 
     @Override
-    public AbstractEntity get(int id) {
+    public T get(int id) {
         return null;
     }
 }
