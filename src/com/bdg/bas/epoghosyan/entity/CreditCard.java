@@ -1,22 +1,10 @@
 package com.bdg.bas.epoghosyan.entity;
 
-<<<<<<< Updated upstream
 import com.bdg.bas.ashahbazyan.entity.BankEntity;
-=======
->>>>>>> Stashed changes
 import com.bdg.bas.epoghosyan.common.CardType;
 
 import java.time.LocalDate;
 
-<<<<<<< Updated upstream
-public class CreditCard  extends BankEntity {
-    private int accountId;
-    private String cardNumber;
-    private LocalDate expDate;
-    private int cvvCode;
-    private CardType cardType;
-
-=======
 public class CreditCard extends AbstractBankEntity {
 
     private int accountId;
@@ -72,5 +60,4 @@ public class CreditCard extends AbstractBankEntity {
     public void setCardType(CardType cardType) {
         this.cardType = cardType;
     }
->>>>>>> Stashed changes
 }
