@@ -2,7 +2,7 @@ package com.bdg.bas.ahakobyan.entity;
 
 import com.bdg.bas.agharibyan.common.Country;
 
-public class Address {
+public class Address  extends AbstractEntity{
 
     private String phoneNumber;
     private String street;
