@@ -1,5 +1,7 @@
 package com.bdg.bas.epoghosyan.entity;
 
+import com.bdg.bas.epoghosyan.common.Address;
+
 public class Customer extends AbstractBankEntity {
 
     private String firstName;
