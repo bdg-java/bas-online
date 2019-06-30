@@ -1,6 +1,5 @@
 package com.bdg.bas.epoghosyan.entity;
 
-import com.bdg.bas.ashahbazyan.entity.BankEntity;
 import com.bdg.bas.epoghosyan.common.CardType;
 
 import java.time.LocalDate;
