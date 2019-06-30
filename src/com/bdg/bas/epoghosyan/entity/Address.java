@@ -1,4 +1,6 @@
-package com.bdg.bas.epoghosyan.common;
+package com.bdg.bas.epoghosyan.entity;
+
+import com.bdg.bas.epoghosyan.common.Country;
 
 public class Address {
 
