@@ -1,12 +1,14 @@
 package com.bdg.bas.yabrakamyan.entity;
 
-public class Customer extends AbstractBankEtity{
+import com.bdg.bas.yabrakamyan.common.Address;
+
+public class Customer extends AbstractBankEntity{
 
     protected String firstName;
     protected String lastName;
-    protected Adress adress;
+    protected Address adress;
 
-    public Customer(String firstName, String lastName, Adress adress) {
+    public Customer(String firstName, String lastName, Address adress) {
 
         this.firstName = firstName;
         this.lastName = lastName;
