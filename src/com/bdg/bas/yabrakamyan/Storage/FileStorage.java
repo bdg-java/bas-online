@@ -2,19 +2,19 @@ package com.bdg.bas.yabrakamyan.Storage;
 
 import com.bdg.bas.yabrakamyan.entity.AbstractBankEntity;
 
-public class FileStorage implements Storage {
+public class FileStorage <T extends AbstractBankEntity> implements Storage<T> {
     @Override
-    public AbstractBankEntity add(AbstractBankEntity entity) {
+    public T add(T entity) {
         return null;
     }
 
     @Override
-    public AbstractBankEntity remove(int id) {
+    public T remove(int id) {
         return null;
     }
 
     @Override
-    public AbstractBankEntity get(int id) {
+    public T get(int id) {
         return null;
     }
 }
