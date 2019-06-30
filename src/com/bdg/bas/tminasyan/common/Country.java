@@ -1,0 +1,18 @@
+package com.bdg.bas.tminasyan.common;
+
+public enum Country {
+    ARM("Armenia"),
+    RU("Russia");
+    private String countryName;
+    Country(String countryName) {
+
+        this.countryName = countryName;
+    }
+
+    public static Country findByName(String countryName) {
+
+        return ARM;
+    }
+}
+
+
