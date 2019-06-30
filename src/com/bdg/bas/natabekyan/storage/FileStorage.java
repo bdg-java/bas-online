@@ -2,19 +2,19 @@ package com.bdg.bas.natabekyan.storage;
 
 import com.bdg.bas.natabekyan.entity.AbstractEntity;
 
-public class FileStorage implements Storage {
+public class FileStorage<T extends AbstractEntity> implements Storage<T> {
     @Override
-    public AbstractEntity add(AbstractEntity entity) {
+    public T add(AbstractEntity entity) {
         return null;
     }
 
     @Override
-    public AbstractEntity remove(int id) {
+    public T remove(int id) {
         return null;
     }
 
     @Override
-    public AbstractEntity get(int id) {
+    public T get(int id) {
         return null;
     }
 }
