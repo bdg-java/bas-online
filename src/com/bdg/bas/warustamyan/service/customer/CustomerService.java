@@ -27,4 +27,14 @@ public class CustomerService implements BankAccountBaseService<Customer, Custome
         Customer customer = new Customer(request.firstName, request.lastName, address);
         return storage.add(customer);
     }
+
+    @Override
+    public Customer get(int id) {
+        return null;
+    }
+
+    @Override
+    public Customer remove(int id) {
+        return null;
+    }
 }

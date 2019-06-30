@@ -36,4 +36,14 @@ public class AccountService implements BankAccountBaseService<Account, AccountCr
 
         return storage.add(account);
     }
+
+    @Override
+    public Account get(int id) {
+        return null;
+    }
+
+    @Override
+    public Account remove(int id) {
+        return null;
+    }
 }

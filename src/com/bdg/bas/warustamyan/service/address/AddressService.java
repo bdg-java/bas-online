@@ -23,4 +23,14 @@ public class AddressService implements BankAccountBaseService<Address, AddressCr
         Address address = new Address(request.phoneNumber, Country.findByName(request.country), request.street);
         return storage.add(address);
     }
+
+    @Override
+    public Address get(int id) {
+        return null;
+    }
+
+    @Override
+    public Address remove(int id) {
+        return null;
+    }
 }
