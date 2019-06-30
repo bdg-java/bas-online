@@ -7,4 +7,6 @@ package com.bdg.bas.warustamyan.dto;
 
 
 public class AccountCreationRequest {
+
+
 }
