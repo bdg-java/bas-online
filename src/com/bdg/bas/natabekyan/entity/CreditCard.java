@@ -10,6 +10,6 @@ public class CreditCard extends AbstractEntity {
     private CardType cardType;
     private String cardNumber;
     private LocalDate expDate;
-    private int cvv;
+    private int code;
 
 }
