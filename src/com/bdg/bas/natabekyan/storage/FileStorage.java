@@ -3,6 +3,7 @@ package com.bdg.bas.natabekyan.storage;
 import com.bdg.bas.natabekyan.entity.AbstractEntity;
 
 public class FileStorage<T extends AbstractEntity> implements Storage<T> {
+
     @Override
     public T add(AbstractEntity entity) {
         return null;
