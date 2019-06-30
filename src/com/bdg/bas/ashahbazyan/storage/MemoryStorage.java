@@ -2,19 +2,19 @@ package com.bdg.bas.ashahbazyan.storage;
 
 import com.bdg.bas.ashahbazyan.entity.BankEntity;
 
-public class MemoryStorage implements Storage {
+public class MemoryStorage<T extends BankEntity> implements Storage<T> {
     @Override
-    public BankEntity add(BankEntity entity) {
+    public T add(T entity) {
         return null;
     }
 
     @Override
-    public BankEntity remove(int id) {
+    public T remove(int id) {
         return null;
     }
 
     @Override
-    public BankEntity get(int id) {
+    public T get(int id) {
         return null;
     }
 }
