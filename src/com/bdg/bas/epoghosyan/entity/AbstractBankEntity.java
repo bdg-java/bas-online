@@ -5,10 +5,10 @@ import java.util.Date;
 
 public class AbstractBankEntity {
 
-    int id;
-    LocalDate createdDate;
-    LocalDate updatedDate;
-    LocalDate deleted;
+    protected int id;
+    protected LocalDate createdDate;
+    protected LocalDate updatedDate;
+    protected LocalDate deleted;
 
 
 }
