@@ -1,6 +1,6 @@
 package com.bdg.bas.ahakobyan.common;
 
-public enum cardType {
+public enum CardType {
 
     Visa, MasterCard;
 
