@@ -1,7 +1,6 @@
 package com.bdg.bas.epoghosyan.entity;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public abstract class AbstractBankEntity {
 
