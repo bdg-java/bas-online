@@ -1,8 +1,6 @@
 package com.bdg.bas.yabrakamyan.entity;
 
-import com.bdg.bas.yabrakamyan.common.Address;
-
-public class Customer extends AbstractBankEntity{
+public class Customer extends AbstractBankEntity {
 
     protected String firstName;
     protected String lastName;
