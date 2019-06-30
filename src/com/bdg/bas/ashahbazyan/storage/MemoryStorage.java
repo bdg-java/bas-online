@@ -3,9 +3,24 @@ package com.bdg.bas.ashahbazyan.storage;
 import com.bdg.bas.ashahbazyan.entity.BankEntity;
 
 public class MemoryStorage<T extends BankEntity> implements Storage<T> {
+    private BankEntity[] container;
+    private int currentStorageIndex;
+    private int storageSize;
+
+    public MemoryStorage(int storageSize) {
+        this.storageSize = storageSize;
+        container = new BankEntity[storageSize];
+    }
+
     @Override
     public T add(T entity) {
-        return null;
+
+        if(storageSize == currentStorageIndex){
+                //increase
+        }
+        this.container[currentStorageIndex] = entity;
+        currentStorageIndex++;
+        return entity;
     }
 
     @Override
