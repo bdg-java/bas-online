@@ -8,7 +8,7 @@ import com.bdg.bas.warustamyan.entity.AbstractBasEntity;
  */
 
 
-public interface BankAccuontBaseService<T extends AbstractBasEntity, R> {
+public interface BankAccountBaseService<T extends AbstractBasEntity, R> {
 
     T create(R request);
 }
