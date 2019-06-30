@@ -1,11 +1,12 @@
 package com.bdg.bas.ashahbazyan.service;
 
-import com.bdg.bas.ashahbazyan.entity.BankEntity;
+import com.bdg.bas.ashahbazyan.dto.AccountCreationRequest;
+import com.bdg.bas.ashahbazyan.entity.Account;
 
-public class AccountService implements  BankAccountBaseService {
+public class AccountService implements  BankAccountBaseService<Account, AccountCreationRequest> {
 
     @Override
-    public BankEntity create(Object request) {
+    public Account create(AccountCreationRequest request) {
         return null;
     }
 }
