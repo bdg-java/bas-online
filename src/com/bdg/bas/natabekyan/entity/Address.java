@@ -1,6 +1,6 @@
-package com.bdg.bas.ashahbazyan.entity;
+package com.bdg.bas.natabekyan.entity;
 
-import com.bdg.bas.ashahbazyan.common.Country;
+import com.bdg.bas.natabekyan.common.Country;
 
 public class Address {
     private String phoneNumber;
