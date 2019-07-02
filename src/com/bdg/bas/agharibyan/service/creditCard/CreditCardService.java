@@ -13,8 +13,7 @@ public class CreditCardService implements BankAccountBaseService<CreditCard, Cre
 
     @Override
     public CreditCard create(CreditCardCreationRequest request) {
-        CreditCard creditCard = new CreditCard(request.accountID, request.cardNumber,request.expDate, request.code, CardType.ARCA);
-        //inchpes karogh em yntrel CardTypei kamayakan field(voch partadir ARCAn)?
+        CreditCard creditCard = new CreditCard(CardType.find(request.cardType));
         return storage.add(creditCard);
     }
 

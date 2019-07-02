@@ -19,6 +19,7 @@ public class CustomerService implements BankAccountBaseService<Customer, Custome
     public Customer create(CustomerCreationRequest request) {
         Address address = addressService.create(request.addrRequest);
         Customer customer = new Customer(request.firstName, request.lastName, address);
+
         return storage.add(customer);
     }
 
