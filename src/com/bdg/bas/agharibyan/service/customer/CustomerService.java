@@ -2,6 +2,7 @@ package com.bdg.bas.agharibyan.service.customer;
 
 import com.bdg.bas.agharibyan.dto.AddressCreationRequest;
 import com.bdg.bas.agharibyan.dto.CustomerCreationRequest;
+import com.bdg.bas.agharibyan.entity.AbstractBankEntity;
 import com.bdg.bas.agharibyan.entity.Address;
 import com.bdg.bas.agharibyan.entity.Customer;
 import com.bdg.bas.agharibyan.service.BankAccountBaseService;
@@ -20,12 +21,13 @@ public class CustomerService implements BankAccountBaseService<Customer, Custome
         Address address = addressService.create(request.addrRequest);
         Customer customer = new Customer(request.firstName, request.lastName, address);
 
+
         return storage.add(customer);
     }
 
     @Override
     public Customer get(int id) {
-        return null;
+        return storage.get(id);
     }
 
     @Override

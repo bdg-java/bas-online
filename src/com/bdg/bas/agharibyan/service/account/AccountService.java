@@ -31,7 +31,7 @@ public class AccountService implements BankAccountBaseService<Account, AccountCr
 
     @Override
     public Account get(int id) {
-        return null;
+        return storage.get(id);
     }
 
     @Override

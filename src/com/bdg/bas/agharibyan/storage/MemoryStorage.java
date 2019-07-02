@@ -2,10 +2,12 @@ package com.bdg.bas.agharibyan.storage;
 
 import com.bdg.bas.agharibyan.entity.AbstractBankEntity;
 
+import java.time.LocalDate;
+
 public class MemoryStorage<T extends AbstractBankEntity> implements Storage<T> {
 
     private AbstractBankEntity[] store;
-    private int currentIndex = 0 ;
+    private int currentIndex;
 
     public MemoryStorage(int storageSize){
         this.store = new AbstractBankEntity[storageSize];
@@ -17,6 +19,8 @@ public class MemoryStorage<T extends AbstractBankEntity> implements Storage<T> {
             this.incStorageSize();
         }
         this.store[currentIndex++] = entity;
+        entity.setId(currentIndex+1);            // ete es  service class-neri create methodi mej chem grum setID, ayl return em anelis kanchum em ays add methody, apa es eli yuraqanchyur objecti hamar steghtsum em che id?
+        entity.setCreated(LocalDate.now());
         return entity;
     }
 
@@ -33,6 +37,9 @@ public class MemoryStorage<T extends AbstractBankEntity> implements Storage<T> {
 
     @Override
     public T get(int id) {
+        if(id-1 < currentIndex) {    // karogh enq aystegh mek exception sarqel, vory kkanchi te addressi, te accounti, te creditCardi, te customeri zhamanak, ev anhatakan el chsarqenq.
+            return (T) store[id - 1];
+        }
         return null;
     }
 }

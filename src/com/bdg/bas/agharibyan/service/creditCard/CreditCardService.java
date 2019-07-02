@@ -13,13 +13,13 @@ public class CreditCardService implements BankAccountBaseService<CreditCard, Cre
 
     @Override
     public CreditCard create(CreditCardCreationRequest request) {
-        CreditCard creditCard = new CreditCard(CardType.find(request.cardType));
+        CreditCard creditCard = new CreditCard(CardType.find(request.cardType)); //indz dur chi galis myus fielderi bacakayutyuny.
         return storage.add(creditCard);
     }
 
     @Override
     public CreditCard get(int id) {
-        return null;
+        return storage.get(id);
     }
 
     @Override

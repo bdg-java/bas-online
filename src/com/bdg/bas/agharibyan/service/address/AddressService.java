@@ -20,7 +20,7 @@ public class AddressService implements BankAccountBaseService<Address, AddressCr
 
     @Override
     public Address get(int id) {
-        return null;
+        return storage.get(id);
     }
 
     @Override
