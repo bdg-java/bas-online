@@ -12,4 +12,11 @@ public class CreditCard extends AbstractBankEntity{
     private int code;
     private CardType cardType;
 
+    public CreditCard(int accountID, String cardNumber, LocalDate expDate, int code, CardType cardType){
+        this.accountID = accountID;
+        this.cardNumber = cardNumber;
+        this.expDate = expDate;
+        this.code = code;
+        this.cardType = cardType;
+    }
 }

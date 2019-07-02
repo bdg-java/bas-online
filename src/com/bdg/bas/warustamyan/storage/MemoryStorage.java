@@ -10,7 +10,7 @@ import com.bdg.bas.warustamyan.entity.AbstractBasEntity;
 
 public class MemoryStorage<T extends AbstractBasEntity> implements Storage<T> {
 
-    private int currentIndex;
+    private int currentIndex; // chhavasarecnem 0i? (Ani)
     private AbstractBasEntity[] store;
 
     public MemoryStorage(int storageSize) {

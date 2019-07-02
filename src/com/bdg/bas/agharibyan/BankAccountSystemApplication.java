@@ -9,7 +9,6 @@ public class BankAccountSystemApplication {
 
     public static void main(String[] args)throws IOException {
 
-        Storage storage = new FileStorage("agharibyan", "cutomer", "dat");
-
+        Storage<?> storage = new FileStorage<>("agharibyan", "cutomer", "dat");
     }
 }
