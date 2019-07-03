@@ -1,6 +1,6 @@
 package com.bdg.bas.ahakobyan.entity;
 
-import com.bdg.bas.agharibyan.common.Country;
+import com.bdg.bas.ahakobyan.common.Country;
 
 public class Address  extends AbstractEntity{
 
