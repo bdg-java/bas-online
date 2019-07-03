@@ -8,6 +8,17 @@ public class AddressService implements BankAccountBaseService<Address, AddressCr
 
     @Override
     public Address create(AddressCreationRequest request) {
+
+        return null;
+    }
+
+    @Override
+    public Address remove(int id) {
+        return null;
+    }
+
+    @Override
+    public Address get(int id) {
         return null;
     }
 }

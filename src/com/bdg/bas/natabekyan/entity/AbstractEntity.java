@@ -9,4 +9,7 @@ public abstract class AbstractEntity {
     protected LocalDate deleted;
     protected LocalDate updated;
 
+    public int getId() {
+        return this.id;
+    }
 }
