@@ -6,7 +6,7 @@ public class Account extends AbstractBankEntity {
     private AccountBalance accountBalance;
     private CreditCard creditCard;
 
-    public Account(Customer customer, AccountBalance accountBalance, CreditCard creditCard) {
+    public Account(Customer customer, CreditCard accountBalance, double creditCard) {
         this.customer = customer;
         this.accountBalance = accountBalance;
         this.creditCard = creditCard;

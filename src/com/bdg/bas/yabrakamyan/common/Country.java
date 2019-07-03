@@ -9,4 +9,8 @@ public enum Country {
     Country(String countryName) {
         this.countryName = countryName;
     }
+
+    public static Country findByName(String countryName) {
+        return ARM;
+    }
 }
