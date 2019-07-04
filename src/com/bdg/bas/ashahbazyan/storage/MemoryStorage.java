@@ -24,7 +24,7 @@ public class MemoryStorage<T extends BankEntity> implements Storage<T> {
     }
 
     private void increaseSize() {
-        BankEntity[] bankEntities =  new BankEntity[container.length+(int) container.length/2];
+        BankEntity[] bankEntities =  new BankEntity[container.length+ (container.length/2)];
         System.arraycopy(container,0,bankEntities,0,container.length);
         container = bankEntities;
 
